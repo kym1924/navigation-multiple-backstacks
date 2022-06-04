@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="androidx.paging.LoadState" />
+
+        <variable
+            name="adapter"
+            type="com.kimym.rickandmorty.base.BaseRickAndMortyPagingAdapter" />
+
+        <variable
+            name="loadState"
+            type="androidx.paging.CombinedLoadStates" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.episode.EpisodeFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_episode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:setPagingWithLoadStateAdapter="@{adapter}"
+            tools:listitem="@layout/item_episode" />
+
+        <include
+            layout="@layout/layout_load_state"
+            app:loadState="@{loadState}"
+            app:onClick="@{() -> adapter.retry()}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

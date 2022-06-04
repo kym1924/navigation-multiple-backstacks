@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/character"
+        android:icon="@drawable/ic_baseline_account_box_24"
+        android:title="@string/character" />
+    <item
+        android:id="@+id/episode"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="@string/episode" />
+    <item
+        android:id="@+id/location"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="@string/location" />
+</menu>

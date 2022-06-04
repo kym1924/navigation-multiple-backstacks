@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="character">Character</string>
+    <string name="location">Location</string>
+    <string name="episode">Episode</string>
+    <string name="last_known_location">Last Known Location:</string>
+    <string name="origin">Origin:</string>
+    <string name="episodes">Episodes</string>
+    <string name="residents">Residents</string>
+    <string name="characters">Characters</string>
+    <string name="error_please_retry">Error. Please Retry.</string>
+</resources>
