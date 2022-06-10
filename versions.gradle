@@ -8,9 +8,9 @@ ext.versions = [
         versionCode     : 1,
         versionName     : '1.0',
 
-        core            : '1.7.0',
-        appcompat       : '1.4.1',
-        material        : '1.6.0',
+        core            : '1.8.0',
+        appcompat       : '1.4.2',
+        material        : '1.6.1',
         constraintLayout: '2.1.4',
 
         junit           : '4.+',
@@ -20,8 +20,6 @@ ext.versions = [
         activityKtx     : '1.4.0',
         lifecycleKtx    : '2.4.1',
         hilt            : '2.38.1',
-        hiltViewmodel   : '1.0.0-alpha03',
-        hiltComplier    : '1.0.0',
         navigation      : '2.4.2',
         paging          : '3.1.1',
         startup         : '1.1.1',
